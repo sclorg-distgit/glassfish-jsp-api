@@ -8,7 +8,7 @@
 
 Name:       %{?scl_prefix}glassfish-jsp-api
 Version:    2.3.2
-Release:    0.6.%{reltag}.1%{?dist}
+Release:    0.6.%{reltag}.2%{?dist}
 Summary:    Glassfish J2EE JSP API specification
 
 License:    (CDDL or GPLv2 with exceptions) and ASL 2.0
@@ -69,6 +69,9 @@ sed -i "/<bundle.symbolicName>/s/-api//" pom.xml
 %doc LICENSE cddllicense.txt
 
 %changelog
+* Thu Jun 22 2017 Michael Simacek <msimacek@redhat.com> - 2.3.2-0.6.b01.2
+- Mass rebuild 2017-06-22
+
 * Wed Jun 21 2017 Java Maintainers <java-maint@redhat.com> - 2.3.2-0.6.b01.1%{?dist}
 - Automated package import and SCL-ization
 
